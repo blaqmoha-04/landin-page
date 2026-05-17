@@ -267,129 +267,113 @@ footer {
     width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
 
-    .small-header {
+    *{
+        box-sizing: border-box;
+    }
+
+    html, body{
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    body{
+        justify-content: center;
+    }
+
+    .small-header{
         display: none;
     }
 
-    header {
-        padding: 10px 0;
+    header{
+        padding: 10px 15px;
         background: white;
+        width: 100%;
     }
 
-    .nav-links a img {
+    .nav-links a img{
         height: 4rem;
+        max-width: 100%;
     }
 
-    .nav-bar_search {
-       display: none;
+    .nav-bar_search{
+        display: none;
     }
 
-    ul {
+    nav{
+        width: 100%;
+    }
+
+    ul{
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+        width: 100%;
+        padding: 0;
     }
 
-    ul li a {
+    ul li a{
         font-size: 16px;
         color: green;
     }
 
-    .search-box {
-        width: 80%;
-        padding: 10px 15px;
-    }
-
-    .search-box input {
-        width: 100%;
-        outline: none;
-    }
-
-    .hero-section {
-        height: 100vh;
+    .hero-section{
+        min-height: 100svh;
         background-position: center;
+        background-size: cover;
     }
 
-    .text-cont {
+    .text-cont{
         left: 50%;
         top: 55%;
         transform: translate(-50%, -50%);
-        width: 85%;
+        width: 90%;
         padding: 20px;
         text-align: center;
     }
 
-    .text-cont h1 {
-        font-size: 38px;
+    .text-cont h1{
+        font-size: clamp(2rem, 6vw, 3rem);
     }
 
-    .text-cont p {
+    .text-cont p{
         font-size: 15px;
         line-height: 1.6;
     }
 
-    .about .firsth1 {
-        font-size: 28px;
-    }
-
-    .card-container {
+    .card-container{
         flex-direction: column;
         align-items: center;
         gap: 30px;
-        padding: 30px;
+        padding: 20px;
     }
 
-    .card-container .card {
-        width: 80%;
+    .card-container .card{
+        width: 100%;
+        max-width: 350px;
     }
 
-    .card:hover {
-        transform: scale(1.05);
-    }
-
-    .t-container {
-        padding: 15px;
-        text-align: center;
-    }
-
-    .t-container p {
-        font-size: 22px;
-    }
-
-    .text-container {
+    .text-container{
         flex-direction: column;
         padding: 20px;
     }
 
-    .text-container p {
+    .text-container p{
         padding: 20px;
         font-size: 14px;
         text-align: center;
     }
 
-    .Services {
+    .Services,
+    .Contacts{
         height: auto;
-        padding-bottom: 40px;
+        padding: 20px;
     }
 
-    .Services .cont {
-        padding: 15px;
-    }
-
-    .Contacts {
-        height: auto;
-        padding: 20px 0;
-    }
-
-    .Contacts p {
-        font-size: 16px;
-        padding: 15px;
-    }
-
-    footer {
+    footer{
         padding: 15px;
         font-size: 14px;
+        text-align: center;
     }
 }
