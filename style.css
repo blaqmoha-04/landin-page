@@ -1,0 +1,395 @@
+*{
+    padding: 0%;
+    margin: 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+}
+
+.small-header {
+    background: rgb(2, 48, 2);
+    width: 100%;
+    height: 3dvh;
+}
+
+header {
+   top: 0;
+   left: 0;
+   position: fixed;
+   background: linear-gradient(to right, green, white, white, green, green, green, green, green);
+   width: 100%;
+   border-bottom: 0.07rem green solid;
+   z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-links a img {
+    height: 5rem;
+    transition: 0.5s ease-in-out;
+}
+
+.nav-links a img:hover {
+    transform: scale(1.08);
+}
+
+.nav-bar_search {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    gap: 1.5rem;
+}
+
+ul li {
+    align-items: center;
+    list-style: none;
+}
+
+ul li a { 
+    display: inline-block;
+    text-decoration: none;
+    gap: 1rem;
+    font-family: 'Segoe UI', Tahoma, sans-serif; 
+    font-size: 95%;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+ul li a:hover {
+    transform: scale(1.08);
+    border-bottom: white 3px solid;
+}
+
+.search-box {
+    height: 20px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 30px;
+    background: #fff;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    gap: 2px;
+}
+
+.search-box input {
+    border: none;
+}
+
+.hero-section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-image: url(niv-img1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: change 30s infinite ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+.text-cont{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.45);
+    padding: 40px;
+    border-radius: 10px;
+    color: white;
+    backdrop-filter: blur(3px);
+}
+
+.text-cont h1{
+    text-align: center;
+    font-size: 80px;
+    color: #00b140;
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.text-cont p{
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.8;
+    font-family: "Poppins", sans-serif;
+    color: #f5f5f5;
+}
+
+@keyframes change {
+    0%
+    {
+        background-image: url(niv-img1.png);
+    }
+    20%
+    {
+        background-image: url(img3.jpg);
+    }
+    40%
+    {
+        background-image: url(img5.jpg);
+    }
+    60%
+    {
+        background-image: url(img2.jpg);
+    }
+    80%
+    {
+        background-image: url(niv-img1.png);
+    }
+    100%
+    {
+        background-image: url(img6.jpg);
+    }
+    
+}
+
+.about {
+    width: 100%;
+    height: 50px 0;
+}
+
+.about .firsth1 {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.card-container {
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 90px;
+}
+
+
+.card-container .card {
+    color: white;
+    background-color: rgb(2, 54, 43);
+    padding: 40px;
+    border-bottom: rgb(5, 13, 119) 10px solid;
+    transition: 0.3s ease-in;
+    width: 140px;
+}
+
+.card:hover {
+    transform: scale(1.5);
+    background-color: #fff;
+    color:  rgb(2, 54, 43);
+    border: 1px  rgb(2, 54, 43) solid;
+    border-bottom: rgb(5, 13, 119) 10px solid;
+}
+
+.t-container {
+    padding-left: 20px;
+}
+
+.t-container h1 {
+    border-left: green 5px solid;
+}
+
+.t-container p{
+    font-size: 40px;
+    font-weight: 30;
+}
+
+.text-container {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+}
+
+.text-container p{
+    font-family: Arial, Helvetica, sans-serif, Tahoma;
+    padding-right: 40px;
+    background: green;
+    color: white;
+    padding: 40px;
+    font-size: 12px;
+}
+
+.text-container p span {
+    border: ;
+    margin: 20px;
+    background-color: #fff;
+    color: green;
+}
+
+.Services {
+    background: rgba(249, 250, 249, 0.616);
+    width: 100%;
+    height: 200px;
+    padding-bottom: 20px;
+}
+
+.Services #h1{
+    text-align: center;
+    padding: 30px;
+}
+
+.Services .cont {
+    padding: 30px;
+    text-align: center;
+}
+
+.Contacts {
+    background: green;
+    width: 100%;
+    height: 150px;
+}
+
+.Contacts p {
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+}
+
+.Contacts .social-icons {
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(4, 49, 16);
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+
+    .small-header {
+        display: none;
+    }
+
+    header {
+        padding: 10px 0;
+        background: white;
+    }
+
+    .nav-links a img {
+        height: 4rem;
+    }
+
+    .nav-bar_search {
+       display: none;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    ul li a {
+        font-size: 16px;
+        color: green;
+    }
+
+    .search-box {
+        width: 80%;
+        padding: 10px 15px;
+    }
+
+    .search-box input {
+        width: 100%;
+        outline: none;
+    }
+
+    .hero-section {
+        height: 100vh;
+        background-position: center;
+    }
+
+    .text-cont {
+        left: 50%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+        width: 85%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .text-cont h1 {
+        font-size: 38px;
+    }
+
+    .text-cont p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .about .firsth1 {
+        font-size: 28px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 30px;
+    }
+
+    .card-container .card {
+        width: 80%;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .t-container {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .t-container p {
+        font-size: 22px;
+    }
+
+    .text-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .text-container p {
+        padding: 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .Services {
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .Services .cont {
+        padding: 15px;
+    }
+
+    .Contacts {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .Contacts p {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 14px;
+    }
+}
